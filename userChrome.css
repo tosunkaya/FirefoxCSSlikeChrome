@@ -1,0 +1,41 @@
+tabbrowser tabpanels { background-color: rgb(19,19,20) !important; }
+browser { background-color: #131314 !important; }
+
+/* Tab - Connect to window */
+.tab-background,.tab-content,.tab-stack {
+border-radius: 0 !important;
+margin-top: 0 !important;
+margin-bottom: 0 !important;
+}
+
+/* Removes empty square on the left side of the tabs */
+#TabsToolbar .titlebar-spacer[type="pre-tabs"]{
+display: none !important;
+}
+
+/* Rouned Tabs */
+.tab-background,
+.tab-loading-burst {
+border: none !important;
+border-top-left-radius: 5px !important;
+border-top-right-radius: 5px !important;
+}
+
+/* Removes lines on selected/hovered tabs */
+.tab-line { display: none !important; }
+
+/* Removes line in between tabs */
+.tabbrowser-tab::before,
+.tabbrowser-tab::after{
+display: none !important;
+}
+
+/* Rounded URL-bar */
+#urlbar-background {
+border-radius: 5px !important;
+}
+
+/* Rounded expanded URL-bar */
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+border-radius: 5px !important;
+}
